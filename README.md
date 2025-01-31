@@ -1,2 +1,2 @@
-# python-api
-This repository contain a begineer guide to writing api with Python (FastAPI) 
+# HNG 12 Task
+This repository contains a beginner guide to writing API with Python (FastAPI) 
