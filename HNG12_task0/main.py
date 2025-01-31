@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from datetime import datetime
+from datetime import datetime, timezone
 
 app = FastAPI()
 
@@ -17,6 +17,6 @@ app.add_middleware(
 def read_root():
     return {
         "email": "chisomjude0205@gmail.com",
-        "current_datetime": datetime.now().isoformat(),
+        "current_datetime":datetime.now(timezone.utc).isoformat(timespec='seconds') + "Z",
         "github_url": "https://github.com/ChisomJude/python-api/tree/master/HNG12_task0"
     }
